@@ -1,5 +1,5 @@
 {
-  "name": "react_demo",
+  "name": "Weather-tunes",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -11,7 +11,7 @@
     "react-dom": "^17.0.1",
     "react-hook-form": "^6.15.1",
     "react-iframe": "^1.8.0",
-    "react-router-dom": "^5.2.0",
+    "react-router-dom": "^5.2.0"
   },
   "scripts": {
     "start": "react-scripts start",
