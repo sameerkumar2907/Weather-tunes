@@ -37,7 +37,6 @@ function Form(){
             const response = await fetch("https://api.openweathermap.org/data/2.5/weather?lat="+lat+"&lon="+lon+"&appid=fc415071491901ce29041bd939ec4ec2")
             const data = await response.json()
             weather=data["weather"][0]["main"]
-            console.log(weather)
             history.push({
                 pathname: '/listen',
                 weather: weather
