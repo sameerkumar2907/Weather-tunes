@@ -13,7 +13,7 @@ function Form(){
         byName(data.cityName)
     }    
     async function byName(cityName){
-        const response = await fetch("http://api.openweathermap.org/data/2.5/weather?q="+cityName+"&appid=fc415071491901ce29041bd939ec4ec2")
+        const response = await fetch("https://api.openweathermap.org/data/2.5/weather?q="+cityName+"&appid=fc415071491901ce29041bd939ec4ec2")
         const data = await response.json()
         weather=data["weather"][0]["main"]
         history.push({
@@ -34,7 +34,7 @@ function Form(){
           )
         }
         async function byGPS(lat, lon){
-            const response = await fetch("http://api.openweathermap.org/data/2.5/weather?lat="+lat+"&lon="+lon+"&appid=fc415071491901ce29041bd939ec4ec2")
+            const response = await fetch("https://api.openweathermap.org/data/2.5/weather?lat="+lat+"&lon="+lon+"&appid=fc415071491901ce29041bd939ec4ec2")
             const data = await response.json()
             weather=data["weather"][0]["main"]
             console.log(weather)
