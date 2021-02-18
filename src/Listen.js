@@ -5,8 +5,8 @@ import Data from "./Data"
 function Listen(props){
     const location = useLocation()
     const song_url= Data[location.weather]["song"]
-    const video_url= "/Videos" + Data[location.weather]["background"]
-    return(
+    const video_url= "/Weather-tunes/Videos" + Data[location.weather]["background"]
+    return( 
         <div className="video">
             <video className='videoTag' autoPlay loop muted>
                 <source src={video_url} type='video/mp4' />
