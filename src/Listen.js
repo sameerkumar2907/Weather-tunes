@@ -11,7 +11,6 @@ function Listen(props){
             <video className='videoTag' autoPlay loop muted>
                 <source src={video_url} type='video/mp4' />
             </video> 
-            {console.log(video_url)}
             <Iframe url={song_url}
                 width="350px"
                 height="350px"  
