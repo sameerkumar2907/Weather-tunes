@@ -16,6 +16,7 @@ function App() {
       <Navbar />
       <Switch>
         <Route exact path="/" component={Home} />
+        <Route exact path="/Weather-tunes/about" component={About} />
         <Route exacy path="/Weather-tunes" component={Home} />
         <Route exact path="/form" component={Form} />
         <Route exact path="/listen" component={Listen} />
