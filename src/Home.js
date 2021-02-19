@@ -4,7 +4,7 @@ function Home(){
     return(
         <div className="home">
             <h1 className="mainContent">Feel the atmosphere <br/><span>Live the Music</span><br/>
-            <NavLink exact to="/form" class="btn btn-primary">Get started</NavLink>
+            <NavLink exact to="/form" className="btn btn-primary">Get started</NavLink>
             </h1>
         </div>
     )

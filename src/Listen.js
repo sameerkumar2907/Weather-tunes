@@ -2,10 +2,12 @@ import React from "react"
 import { useLocation } from "react-router-dom"
 import Iframe from 'react-iframe'
 import Data from "./Data"
+import FadeElement from "./FadeElement"
 function Listen(props){
     const location = useLocation()
     const song_url= Data[location.weather]["song"]
     const video_url= "/Weather-tunes/Videos" + Data[location.weather]["background"]
+    var text = Data[location.weather]["text"]
     return( 
         <div className="video">
             <video className='videoTag' autoPlay loop muted>
@@ -19,6 +21,7 @@ function Listen(props){
                 display="initial"
                 position="relative"
             />
+            < FadeElement text={text} />
         </div>
     )
 }
