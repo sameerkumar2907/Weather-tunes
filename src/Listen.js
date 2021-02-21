@@ -12,10 +12,9 @@ function Listen(props){
         <div className="video">
             <video className='videoTag' autoPlay loop muted>
                 <source src={video_url} type='video/mp4' />
-            </video> 
+            </video>   
             <Iframe url={song_url}
-                width="350px"
-                height="350px"  
+                
                 id="myId"
                 className="myClassname"
                 display="initial"

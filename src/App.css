@@ -1,28 +1,31 @@
 *{
   box-sizing: border-box;
   margin: 0%;
-  padding: 0%
+  padding: 0%;
 }
 html{
+  font-size: 62.5%;
 }
 .myClassname{
   text-align: center;
   margin-left: 30%;
   opacity: 0.5;
   border: none;
+  width: 30rem;
+  height: 30rem;
 }
 .navbar{
   background-color: black;
 }
 .navbar-light .navbar-nav .nav-link.active{
   color:#a5abb1;
-  font-size: 1.4rem;
+  font-size: 2.4rem;
   padding-right: 1.9rem;
 }
 
 .navbar-light .navbar-brand.active{
   color: white;
-  font-size: 1.8rem;
+  font-size: 2.8rem;
   text-decoration: none;
   padding-left: 5%;
 }
@@ -51,6 +54,10 @@ html{
   padding-bottom: 30%;
   padding-left: 15%;
   padding-right: 15%;
+  font-size: 3.5rem;
+}
+.or{
+  color:rgb(207, 207, 233)
 }
 .home{
   background-image: url("https://images.unsplash.com/photo-1421217336522-861978fdf33a?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MjF8fHxlbnwwfHx8&w=1000&q=80");
@@ -63,31 +70,35 @@ html{
 }
 .btn{
   border-radius: 100px;
+  font-size: 1.5rem;
 }
 .col-auto{
   margin-top: 30px;
 }
 Iframe{
-  margin-top: 5%;
+  margin-top: 5%; 
 }
 .fadyText{
   position: absolute;
-  right: 70px;
+  right: 5rem;
   top: 150px;
 }
 video{
   position: absolute;
-  width: 98.2%;
-  height: 100%;
-  object-fit: cover;
-  margin-left: 1%;
+  width: 100%;
 }
 .gps{
   background-color: rgb(72, 235, 72);
   color: black;
 }
-@media(max-width:468px){
+@media(min-width:481px) and (max-width:768px){
+  .myClassname{
+    width: 30rem;
+    height: 23rem;
+  }
+}
+@media(max-width:480px){
   html{
-    font-size: 55%;
+    font-size: 45%;
   }
 }

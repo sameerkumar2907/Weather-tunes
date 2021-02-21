@@ -55,7 +55,7 @@ function Form(){
                         </div>
                     </form>
                 </div>
-                <div><h2>OR</h2></div>
+                <div><h2 className="or">OR</h2></div>
                 <button onClick={Nav} type="submit" className="btn btn-primary mb-3 gps">Use GPS instead</button>
             </h1>
         </div>
