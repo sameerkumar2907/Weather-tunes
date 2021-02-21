@@ -102,3 +102,8 @@ video{
     font-size: 45%;
   }
 }
+@media(min-width:320px) and (max-width:479px){
+  .myClassname{
+    height: 21rem;
+  }
+}
